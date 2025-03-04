@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav>
+    
+        <div class="logo"><i style="font-family: Georgia, 'Times New Roman', Times, serif;">FishBook</i></div>
+        
+            
+        <ul>
+            <li><i class="fa-solid fa-house icon"></i></li>
+            <li><i class="fa-solid fa-user-group icon"></i></li>
+            <li><i class="fa-solid fa-message icon"></i></li>
+            <li><i class="fa-solid fa-bell icon"></i></li>
+            <li><i class="fa-solid fa-circle-user icon"></i></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- First Column -->
+        <div class="column">
+            <!-- Profile -->
+            <div class="myprof box">
+                <h3>My Profile</h3>
+                <p class="w3-center"><img src="D:\projects\html\WST\pics\image.png" class="cimage" alt="Avatar"></p>
+                <p class="proftxt"> Designer, UI</p>
+                <p class="proftxt">Cagayan de Oro City, Philippines</p>
+                <p class="proftxt">December 26, 2004</p>
+            </div>
+
+            <!-- Accordion -->
+            <div class="dropdown">
+                <div class="dropdown-button" onclick="toggleDropdown()"><i>My Groups</i></div>
+                    <div class="dropdown-content">
+                        <p>Some text...</p>
+                    </div>
+                <div class="dropdown-button" onclick="toggleDropdown()"><i>My Events</i></div>
+                    <div class="dropdown-content">
+                        <p>Some text...</p>
+                    </div>
+                <div class="dropdown-button" onclick="toggleDropdown()"><i>Gallery</i></div>
+            </div>
+
+            <!-- Interests -->
+            <div class="inter box">
+                <p><b>Interests</b></p>
+                <li>Movies</li>
+                <li>Dancing</li>
+                <li>Music</li>
+                <li>EE Student aw</li>
+            </div>
+
+            <!-- Alert -->
+            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small alert">
+                <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+                    <i class="fa fa-remove"></i>
+                </span>
+                    <p><strong>Hey!</strong></p>
+                    <p>People are looking at your profile. Find out who.</p>
+            </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="column">
+            <!-- Update Status -->
+            <div class="status">
+                <div class="box">
+                    <p contenteditable="true" class="editable">What's on your mind?</p>
+                    <button type="submit" class="pbutton">Post</button>
+                </div>
+            </div>
+
+            <!-- Post Section -->
+            <div class="post box">
+                <div class="post-item">
+                    <img src="pics\gojo.jpg" alt="Johnny">
+                    <h3><b>Johnny</b></h3>
+                </div>
+                    <p>&#x1F4CD; Iloilo City, Philippines</p>
+                    <img src="pics/1.jpg" class="postpics"> <img src="pics/2.jpg" class="postpics"> <img src="pics/3.jpg" class="postpics">
+                    <button class="fa fa-heart hbutton"></button>
+                    <button class="fa fa-comment sbutton"></button>
+                    <button class="fa fa-share sbutton"></button>
+            </div>
+
+           
+            <div class="post box">
+                <div class="post-item">
+                    <img src="pics/idk.jpg" alt="Kakaylx">
+                    <h3><b>Kakaylx</b></h3>
+                </div>
+                    <!-- Pics -->
+                    <p>me me me</p>
+                    <img src="pics/4.jpg" class="postpics"> <img src="pics/6.jpg" class="postpics"> <img src="pics/5.jpg" class="postpics">
+                    <button class="fa fa-heart hbutton"></button>
+                    <button class="fa fa-comment sbutton"></button>
+                    <button class="fa fa-share sbutton"></button>
+            </div>
+        </div>
+
+        <!--third column-->
+        <div class="column">
+            <div class="tbox box">
+                <p>Upcoming Events:</p>
+                    <img src="pics/hbd.jpg" width="80px" height="80px" style="margin-bottom: 5px;">
+                    <p style="margin-bottom: 5px;">hbd</p>
+                <button class="vinfo">View Info</button>
+            </div>
+
+            <div class="tbox box">
+                <p>Friend Request</p>
+                    <img src="D:\projects\html\WST\pics\anya.jpg" width="80px" height="80px" style="margin-bottom: 5px;">
+                    <p style="margin-bottom: 4px;"><strong>Anya</strong></p>
+                <button class="fa fa-check yes"></button>  <button class="fa fa-close no"></button>
+            </div>
+        
+            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small tbox box">
+                <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topleft">
+                    <i class="fa fa-remove"></i>
+                    <p style="margin-top: 5px;">ADS</p>
+                    <img src="pics/ads.jpg" width="110px" height="110px">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+    <p>wao</p>
+</footer>
+</html>
